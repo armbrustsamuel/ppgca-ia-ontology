@@ -1,0 +1,365 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/lucas/ontologies/2020/4/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/lucas/ontologies/2020/4/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/lucas/ontologies/2020/4/untitled-ontology-6"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Adulto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alergia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Asma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cardiaca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompostoQuimico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crianca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doenca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Idoso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infeccao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Isotretinoina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jovem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscular"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Respiratoria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SemTarja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sintoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TarjaAmarela"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TarjaAzul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TarjaPreta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TarjaVermelha"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#comRestricao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deCabeca"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dipirona"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hidroxocloroquina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#paracetamol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#semRestricao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temComposto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temDoenca"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temRestricao"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#genero"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gravida"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#idade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#peso"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carlos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Roacutan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samuel"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#TarjaAmarela"/>
+        <Class IRI="#TarjaAzul"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Adulto"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alergia"/>
+        <Class IRI="#Sintoma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Asma"/>
+        <Class IRI="#Respiratoria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cardiaca"/>
+        <Class IRI="#Doenca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crianca"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dor"/>
+        <Class IRI="#Sintoma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Idoso"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infeccao"/>
+        <Class IRI="#Sintoma"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isotretinoina"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isotretinoina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temRestricao"/>
+            <Class IRI="#Crianca"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Isotretinoina"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temRestricao"/>
+            <Class IRI="#Idoso"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jovem"/>
+        <Class IRI="#Pessoa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscular"/>
+        <Class IRI="#Dor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Respiratoria"/>
+        <Class IRI="#Doenca"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SemTarja"/>
+        <Class IRI="#Medicamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TarjaAmarela"/>
+        <Class IRI="#Medicamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TarjaAzul"/>
+        <Class IRI="#Medicamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TarjaPreta"/>
+        <Class IRI="#Medicamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TarjaVermelha"/>
+        <Class IRI="#Medicamento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#comRestricao"/>
+        <Class IRI="#TarjaVermelha"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deCabeca"/>
+        <Class IRI="#Dor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dipirona"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hidroxocloroquina"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#paracetamol"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#semRestricao"/>
+        <Class IRI="#TarjaVermelha"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Idoso"/>
+        <NamedIndividual IRI="#Carlos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temDoenca"/>
+            <Class IRI="#Cardiaca"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Carlos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Adulto"/>
+        <NamedIndividual IRI="#Lucas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temDoenca"/>
+            <Class IRI="#Asma"/>
+        </ObjectExactCardinality>
+        <NamedIndividual IRI="#Lucas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medicamento"/>
+        <NamedIndividual IRI="#Roacutan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temComposto"/>
+            <Class IRI="#Isotretinoina"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Roacutan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Jovem"/>
+        <NamedIndividual IRI="#Samuel"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idade"/>
+        <NamedIndividual IRI="#Carlos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">89</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peso"/>
+        <NamedIndividual IRI="#Carlos"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#genero"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <Literal>Masculino</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#idade"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#peso"/>
+        <NamedIndividual IRI="#Lucas"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">79</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temComposto"/>
+        <Class IRI="#Medicamento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temDoenca"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temRestricao"/>
+        <Class IRI="#CompostoQuimico"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temComposto"/>
+        <Class IRI="#CompostoQuimico"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temRestricao"/>
+        <Class IRI="#Doenca"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temRestricao"/>
+        <Class IRI="#Sintoma"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#genero"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gravida"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#idade"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#peso"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#genero"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#gravida"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#idade"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#peso"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
