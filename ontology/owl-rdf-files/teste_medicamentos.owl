@@ -115,6 +115,9 @@
         <DataProperty IRI="#idade"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#nome"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#peso"/>
     </Declaration>
     <Declaration>
@@ -282,6 +285,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">89</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#nome"/>
+        <NamedIndividual IRI="#Carlos"/>
+        <Literal>Carlos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#peso"/>
         <NamedIndividual IRI="#Carlos"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
@@ -338,6 +346,10 @@
         <Class IRI="#Pessoa"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#nome"/>
+        <Class IRI="#Pessoa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#peso"/>
         <Class IRI="#Pessoa"/>
     </DataPropertyDomain>
@@ -352,6 +364,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#idade"/>
         <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nome"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#peso"/>
