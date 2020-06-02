@@ -79,6 +79,9 @@
         <Class IRI="#TarjaVermelha"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#cloridrato_de_fenilefrina"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#comRestricao"/>
     </Declaration>
     <Declaration>
@@ -89,6 +92,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#hidroxocloroquina"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#maleato_de_clorfenamina"/>
     </Declaration>
     <Declaration>
         <Class IRI="#paracetamol"/>
@@ -115,9 +121,6 @@
         <DataProperty IRI="#idade"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#nome"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#peso"/>
     </Declaration>
     <Declaration>
@@ -125,6 +128,12 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Lucas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rafael"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Resfrenol"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Roacutan"/>
@@ -219,6 +228,10 @@
         <Class IRI="#Medicamento"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#cloridrato_de_fenilefrina"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#comRestricao"/>
         <Class IRI="#TarjaVermelha"/>
     </SubClassOf>
@@ -232,6 +245,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#hidroxocloroquina"/>
+        <Class IRI="#CompostoQuimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#maleato_de_clorfenamina"/>
         <Class IRI="#CompostoQuimico"/>
     </SubClassOf>
     <SubClassOf>
@@ -265,7 +282,44 @@
         <NamedIndividual IRI="#Lucas"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Crianca"/>
+        <NamedIndividual IRI="#Rafael"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Medicamento"/>
+        <NamedIndividual IRI="#Resfrenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SemTarja"/>
+        <NamedIndividual IRI="#Resfrenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temComposto"/>
+            <Class IRI="#cloridrato_de_fenilefrina"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Resfrenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temComposto"/>
+            <Class IRI="#dipirona"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Resfrenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#temComposto"/>
+            <Class IRI="#maleato_de_clorfenamina"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#Resfrenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Medicamento"/>
+        <NamedIndividual IRI="#Roacutan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#comRestricao"/>
         <NamedIndividual IRI="#Roacutan"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -276,18 +330,13 @@
         <NamedIndividual IRI="#Roacutan"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Jovem"/>
+        <Class IRI="#Adulto"/>
         <NamedIndividual IRI="#Samuel"/>
     </ClassAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#idade"/>
         <NamedIndividual IRI="#Carlos"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">89</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#nome"/>
-        <NamedIndividual IRI="#Carlos"/>
-        <Literal>Carlos</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#peso"/>
@@ -346,10 +395,6 @@
         <Class IRI="#Pessoa"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#nome"/>
-        <Class IRI="#Pessoa"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#peso"/>
         <Class IRI="#Pessoa"/>
     </DataPropertyDomain>
@@ -364,10 +409,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#idade"/>
         <Datatype abbreviatedIRI="xsd:int"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#nome"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#peso"/>
